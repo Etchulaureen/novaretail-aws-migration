@@ -1,0 +1,7 @@
+workload,platform,role,criticality,dependencies,strategy,target
+WEB01,Ubuntu VM,Public web server,High,APP01,Rehost,Amazon EC2
+APP01,Ubuntu VM,Python application,Critical,DB01,Replatform,Amazon EC2
+DB01,PostgreSQL,Transaction database,Critical,APP01,Replatform,Amazon RDS PostgreSQL
+FILE01,Linux VM,Shared file server,Medium,Internal users,Replatform,Amazon S3
+LEGACY01,Windows Server,Legacy reporting,Low,None,Retire,Decommission
+HR01,Windows Server,HR application,Medium,Local directory,Retain,On-premises
