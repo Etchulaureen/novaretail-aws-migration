@@ -22,6 +22,6 @@
 - [ ] Final migration report shared
 
 ## Closure
-- [ ] Lessons learned captured
+- [x] Lessons learned captured
 - [ ] Risks closed/transferred
 - [ ] Remaining actions assigned
