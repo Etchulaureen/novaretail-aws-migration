@@ -1,8 +1,8 @@
 # NovaRetail AWS Migration Lab
 
-A complete portfolio project simulating the work of a **Junior Infrastructure Migration Consultant**.
+A complete portfolio project simulating the work of an Infrastructure Migration Consultant
 
-The fictional client, **NovaRetail France**, is moving a small legacy/on-premises estate to AWS. The repository demonstrates the full migration lifecycle:
+The  client, **NovaRetail France**, is moving a small legacy/on-premises estate to AWS. The repository demonstrates the full migration lifecycle:
 
 1. Discovery and assessment
 2. 6R migration strategy
@@ -13,7 +13,7 @@ The fictional client, **NovaRetail France**, is moving a small legacy/on-premise
 7. Rollback planning
 8. Hypercare and operational handover
 
-> This is a lab, not a claim of real customer production work. It is designed to demonstrate methodology, documentation, automation and technical reasoning.
+> This is a lab,  designed to demonstrate methodology, documentation, automation and technical reasoning.
 
 ## Skills demonstrated
 
