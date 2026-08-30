@@ -95,6 +95,7 @@ Validation performed:
 The initial restore connectivity test failed because the restored instance was attached to a different security group. After applying the original database security group, connectivity from the application tier to the restored database succeeded.
 
 This validates the RDS snapshot and infrastructure recovery process. PostgreSQL authentication and application-level data validation were not performed.
+- Temporary restored RDS instance and manual recovery-test snapshot removed after validation: PASS
 
 ## Overall Result
 
