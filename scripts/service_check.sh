@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
-SERVICE="${1:-nginx}"
-if systemctl is-active --quiet "$SERVICE"; then
-  echo "PASS: $SERVICE is active"
+
+CONTAINER="${1:-novaretail-app}"
+
+if docker ps --format '{{.Names}}' | grep -qx "$CONTAINER"; then
+  echo "PASS: container $CONTAINER is running"
 else
-  echo "FAIL: $SERVICE is not active"
-  systemctl status "$SERVICE" --no-pager || true
+  echo "FAIL: container $CONTAINER is not running"
+  docker ps -a
   exit 1
 fi
