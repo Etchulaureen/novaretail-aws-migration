@@ -1,16 +1,16 @@
 # 09 — Handover Checklist
 
 ## Documentation
-- [ ] Architecture updated
+- [x] Architecture updated
 - [ ] Inventory updated
-- [ ] Runbook stored
-- [ ] Rollback plan stored
+- [x] Runbook stored
+- [x] Rollback plan stored
 - [ ] Support contacts documented
 - [ ] Known issues documented
 
 ## Operations
 - [ ] CloudWatch alarms tested
-- [ ] Backup process verified
+- [x] Backup process verified — manual RDS snapshot restore test completed
 - [ ] Patch process defined
 - [ ] Access reviewed
 - [ ] Support team trained
