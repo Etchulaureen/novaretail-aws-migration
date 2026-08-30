@@ -78,6 +78,24 @@ The bootstrap process was corrected to:
 
 After remediation, both ALB targets became healthy and external HTTP validation returned `200 OK`.
 
+## Backup and Restore Validation
+
+A manual Amazon RDS snapshot was created from the NovaRetail PostgreSQL database and restored into a separate temporary RDS instance.
+
+Validation performed:
+
+- Manual RDS snapshot creation: PASS
+- Snapshot reached `available` state: PASS
+- Restore into a separate private RDS instance: PASS
+- Restored instance reached `available` state: PASS
+- Correct database subnet group applied: PASS
+- Database security group applied to restored instance: PASS
+- EC2 application tier -> restored RDS port `5432`: PASS
+
+The initial restore connectivity test failed because the restored instance was attached to a different security group. After applying the original database security group, connectivity from the application tier to the restored database succeeded.
+
+This validates the RDS snapshot and infrastructure recovery process. PostgreSQL authentication and application-level data validation were not performed.
+
 ## Overall Result
 
 **Migration validation: PASS**
