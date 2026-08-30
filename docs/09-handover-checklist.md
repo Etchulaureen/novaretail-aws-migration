@@ -6,7 +6,7 @@
 - [x] Runbook stored
 - [x] Rollback plan stored
 - [ ] Support contacts documented
-- [ ] Known issues documented
+- [x] Known issues documented
 
 ## Operations
 - [ ] CloudWatch alarms tested
