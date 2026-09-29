@@ -76,7 +76,7 @@ aws sts get-caller-identity
 ## Quick start
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Etchulaureen/novaretail-aws-migration.git
 cd novaretail-aws-migration/terraform
 cp terraform.tfvars.example terraform.tfvars
 terraform init
