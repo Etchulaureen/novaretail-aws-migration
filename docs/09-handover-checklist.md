@@ -2,7 +2,7 @@
 
 ## Documentation
 - [x] Architecture updated
-- [ ] Inventory updated
+- [x] Inventory updated
 - [x] Runbook stored
 - [x] Rollback plan stored
 - [ ] Support contacts documented
