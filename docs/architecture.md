@@ -52,9 +52,9 @@ flowchart TB
 
 ## Security groups
 
-- ALB: inbound TCP/80 from internet
-- App: inbound TCP/80 from ALB security group only
-- RDS: inbound TCP/5432 from app security group only
+- ALB: inbound TCP/80 from the internet; forwards to the app instances on TCP/8080
+- App: inbound TCP/8080 from the ALB security group only (the Flask container listens on 8080; target group health check on `/health`)
+- RDS: inbound TCP/5432 from the app security group only
 
 ## Production improvements
 
